@@ -3,7 +3,7 @@
 
 USE gymdb;
 
--- Drop in reverse dependency order (optional for reset)
+-- Drop in reverse dependency order optional for reset)
 DROP TABLE IF EXISTS RESERVATION;
 DROP TABLE IF EXISTS SEANCE;
 DROP TABLE IF EXISTS ADHESION;
