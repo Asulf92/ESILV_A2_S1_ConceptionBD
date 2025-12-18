@@ -30,7 +30,7 @@ public static class AppConfig
 
         if (string.IsNullOrWhiteSpace(db.Salt))
         {
-            throw new InvalidOperationException("Missing Database.Salt in appsettings.json");
+            throw new InvalidOperationException("Missing Database.Salt dans appsettings.json");
         }
 
         return db;
