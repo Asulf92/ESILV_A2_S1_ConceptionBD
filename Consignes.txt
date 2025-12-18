@@ -1,0 +1,44 @@
+Sujet : concevoir une base de données + application C# pour la gestion quotidienne d’une salle de sport (membres, adhésions, coachs, cours, salles).
+Groupe : projet en trinôme.
+Contexte : ouverture d’une salle de sport → préparation d’une application couvrant les fonctionnalités ci-dessous.
+Fonctionnalités attendues
+1) Interface d’administration (2 niveaux)
+Deux rôles : administrateur principal et administrateur secondaire.
+Gestion membres / demandes d’adhésion : ajouter un membre, valider une inscription, supprimer une adhésion, afficher/modifier les infos d’un membre, etc.
+Gestion des coachs : enregistrer infos (nom, prénom, spécialité, numéro de contact, etc.).
+Gestion des cours : enregistrer infos (nom du cours, horaire, coach attribué, capacité maximale des participants, etc.).
+2) Interface membre
+Inscription : formulaire d’inscription à valider par un administrateur.
+Infos à sauvegarder : nom, prénom, adresse, téléphone, e-mail, date d’inscription, etc.
+Réservation : un membre validé peut réserver un cours parmi la liste proposée.
+Historique : accès à l’historique des inscriptions et de leur gestion.
+3) Interface évaluation
+Génération de rapports statistiques : infos membres, participation aux cours collectifs, coachs les plus suivis, etc.
+Points à ne pas oublier
+Connexion sécurisée pour membres et administrateurs.
+Gestion des capacités : impossible de s’inscrire à un cours si la capacité est atteinte.
+Gestion des réservations et cours :
+annulation de réservation par le membre,
+ajout/modification/annulation d’un cours par un administrateur.
+Privilèges différents entre admin principal et secondaire (utilisation BDD).
+Ajouter des infos textuelles pour faciliter l’usage :
+cours : nom, description, durée, intensité, niveau de difficulté, etc.
+coachs : nom, formations, spécialités, etc.
+formats de saisie attendus.
+Contraintes techniques (BDD + requêtes)
+Vous devez :
+Créer différents utilisateurs BDD avec différents privilèges.
+Utiliser au moins 2 contraintes sur attributs (autres que PK, FK, NOT NULL).
+Avoir dans vos requêtes au minimum :
+2 requêtes avec sous-requêtes
+1 requête ensembliste
+2 requêtes avec jointures (sql1 et sql2)
+1 requête LEFT JOIN et 1 requête RIGHT JOIN
+1 requête pour chacune des 6 fonctions d’agrégation vues en cours
+Ces requêtes doivent être utilisées dans l’application et renseignées dans le fichier récapitulatif.
+Livrables
+Diagramme E/A de la BDD
+Note explicative (1 page) : choix techniques, fonctionnement de l’application, composition du groupe, etc.
+Scripts SQL : création BDD, création utilisateurs (noms personnalisés), peuplement
+Projet C#
+Fichier SQL récapitulant toutes les requêtes utilisées dans l’application
